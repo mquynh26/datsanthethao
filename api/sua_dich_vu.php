@@ -23,6 +23,7 @@ if (empty($ten)) {
     ]);
     exit;
 }
+
 $stmt = $conn->prepare("SELECT dich_vu_id FROM dich_vu WHERE ten_dich_vu = ? AND dich_vu_id != ?");
 $stmt->bind_param("si", $ten, $id);
 $stmt->execute();
