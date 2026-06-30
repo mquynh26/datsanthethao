@@ -13,6 +13,7 @@ if ($id <= 0 || empty($ten) || empty($diaChi)) {
     ]);
     exit;
 }
+
 //check trùng tên cơ sở
 $stmt = $conn->prepare("SELECT co_so_id FROM co_so WHERE ten_co_so = ? AND co_so_id != ?");
 $stmt->bind_param("si", $ten, $id);

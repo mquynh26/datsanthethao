@@ -13,6 +13,7 @@ if ($sanId <= 0 || empty($tenSan)) {
     ]);
     exit;
 }
+
 //check trùng tên sân
 $stmt = $conn->prepare("SELECT san_id FROM san WHERE ten_san = ? AND san_id != ?");
 $stmt->bind_param("si", $tenSan, $sanId);

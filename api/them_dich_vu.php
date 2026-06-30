@@ -22,6 +22,7 @@ if (empty($ten)) {
     ]);
     exit;
 }
+
 //check trùng tên dịch vụ
 $stmt = $conn->prepare("SELECT dich_vu_id FROM dich_vu WHERE ten_dich_vu = ?");
 $stmt->bind_param("s", $ten);

@@ -35,3 +35,5 @@ echo json_encode([
     'khu_vuc_id' => $conn->insert_id
 ]);
 ?>
+
+
