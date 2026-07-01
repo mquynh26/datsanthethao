@@ -1,4 +1,6 @@
+
 git push, pull
+git .ignore
 svn
 ssh
 sftp
