@@ -1,0 +1,5 @@
+#cau hinh file
+.env
+*.log
+*.swp
+cache/
