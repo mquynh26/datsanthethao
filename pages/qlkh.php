@@ -129,7 +129,7 @@
         setTimeout(() => { t.style.transform = 'translateX(120%)'; setTimeout(() => t.remove(), 300); }, 3000);
     }
 
-    //xử lý đăng nhập hiển thị thông tin user ở header nếu đã đăng nhập
+    //xử lý đăng nhập hiển thị thông tin user ở header nếu đã đăng nhập tai khoan
     const userActions = document.querySelector('.user-actions');
     if (user && user.vai_tro === 'khach_hang') {
         window.location.href = '../index.php';
