@@ -1,4 +1,4 @@
-git add
+git push, pull
 svn
 ssh
 sftp
